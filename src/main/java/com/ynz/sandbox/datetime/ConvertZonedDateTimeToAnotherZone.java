@@ -10,10 +10,10 @@ public class ConvertZonedDateTimeToAnotherZone {
         System.out.println("current local dateTime: ");
         System.out.println(LocalDateTime.now());
 
-        System.out.println("covert a localDateTime to its zonedTime.");
+        System.out.println("covert a LocalDateTime(without ZoneId) to its zonedDateTime.");
         System.out.println(LocalDateTime.now().atZone(ZoneId.of("Asia/Shanghai")));
 
-        System.out.println("Covert a Zoned DateTime to another Zone");
+        System.out.println("Covert a Zoned DateTime to its counterparty in another Zone");
         System.out.println(ZonedDateTime.now().withZoneSameInstant(ZoneId.of("Asia/Shanghai")));
     }
 }
