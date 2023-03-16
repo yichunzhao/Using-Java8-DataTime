@@ -8,3 +8,4 @@ ZoneOffset: extends form ZoneId. A time-zone offset from Greenwich/UTC, such as 
 
 ## Coverting DateTime between TimeZones
 
+Instants are referred to UTC, therefore converting ZonedDateTime between different ZoneId can based on a common ground, i.e. instant. 
